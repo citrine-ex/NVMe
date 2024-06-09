@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="CSS/font-init.css">
+        <link rel="stylesheet" href="CSS/main.css">
+
+        <script src="JS/CORE/break_eternity.js" defer></script>
+        <script src="JS/CORE/LOADER.js" defer></script>
+        <script src="JS/CORE/FORMATING.js" defer></script>
+        <script src="JS/CORE/CONSTURCTORS.js" defer></script>
+        <script src="JS/CORE/UI.js" defer></script>
+        <script src="JS/MAIN_RUNNER.js" defer></script>
+        <script src="JS/PROGRESSION.js" defer></script>
+    </head>
+    <body class="MAIN">
+        <div class='TAB-HEADER'>
+            <button onclick="SWITCH_TO(this)" data-tab-id="tab1" id="MAIN_TAB" class="T_BTNS hidden">Main</button>
+            <button onclick="SWITCH_TO(this)" data-tab-id="tab2" id="CYCLE_TAB" class="T_BTNS hidden">CYCLE</button>
+        </div>
+        <div class='TAB' id='tab1'>
+            <button id='MAIN-POINT-DIV' onclick="MANUAL_GAIN_CURRENCY('I')">
+                <span id='MAIN-POINT-TXT'>You have <span id='POINT-TXT'></span> ★<sup>0</sup></span>
+                <span id='MAIN-POINT-PS-TXT'>You generate <span id='POINT-PS-TXT'></span> ★<sup>0</sup> / sec</span>
+            </button> 
+            <div class='UPGS'> 
+                <div class='UPG-TAB-HEADER hidden'>
+                    <button onclick="SWITCH_TAB('tab0-1')" id="MAIN_TAB" class="T_BTNS">T1</button>
+                    <button onclick="SWITCH_TAB('tab0-2')" id="ACH_TAB" class="T_BTNS">??? ??? ???</button>
+                </div>
+                <div id='tab0-1'>
+                    <span style="font-size: 12pt">>>> Set NULL</span> <br>
+                    <div class='UPG-CONT'>
+                        <button id='PRE-P-UPG-001' class='UPGRADE PRE-P-UPG-001' onclick="BUY_UPG('PRE-P-UPG-001', 'I')">
+                            <div id='PRE-P-UPG-001-LC'>
+                                <span id='PRE-P-UPG-001-LTXT'></span> 
+                            </div>
+                            <span id='PRE-P-UPG-001-T'></span>
+                        </button>
+                        <button id='PRE-P-UPG-002' class='UPGRADE hidden' onclick="BUY_UPG('PRE-P-UPG-002', 'I')">
+                            <div id='PRE-P-UPG-002-LC'>
+                                <span id='PRE-P-UPG-002-LTXT'></span> 
+                            </div>
+                            <span id='PRE-P-UPG-002-T'></span>
+                        </button>
+                    </div>
+                </div>
+            </div>                  
+        </div>   
+        <div class='TAB' id='tab2'>
+</div>
+</body>
+</html>
